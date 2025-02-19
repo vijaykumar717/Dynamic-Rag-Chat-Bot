@@ -1,80 +1,68 @@
 ABEX Chat Bot - AI-Powered Web Scraper & Chat Interface
-🚀 ABEX Chat Bot is an AI-powered application that scrapes web content, processes it using Weaviate for semantic search, and provides intelligent responses using Google's Gemini AI.
+🚀 ABEX Chat Bot is an advanced AI-powered web scraper and chatbot that can extract web content, store it in a vector database (Weaviate), and provide intelligent responses using Google Gemini AI.
 
-It features:
-✅ Web scraping using Selenium
-✅ AI-powered chatbot with personality modes (Formal, Casual, Humorous)
-✅ Optimized embeddings using Sentence Transformers
-✅ Vector search with Weaviate
-✅ FastAPI backend with Next.js frontend
+It includes:
+✅ Web Scraping with Selenium
+✅ AI Chatbot with Multiple Personalities (Formal, Casual, Humorous)
+✅ Efficient Vector Search with Weaviate
+✅ Optimized Embeddings with Sentence Transformers
+✅ FastAPI Backend + Next.js Frontend
+
 
 📌 Tech Stack Used
-Component	Technology
-Frontend	Next.js (React)
-Backend	FastAPI
-Database	Weaviate (Vector Search)
-Web Scraping	Selenium & BeautifulSoup
-AI Model	Google Gemini API
-Embeddings	sentence-transformers/all-mpnet-base-v2
-Hosting	Local (or Cloud)
+Frontend: Next.js (React)
+Backend: FastAPI
+Vector Database: Weaviate (Semantic Search)
+Web Scraping: Selenium & BeautifulSoup
+AI Model: Google Gemini API
+Embeddings: sentence-transformers/all-mpnet-base-v2
+Hosting: Local AND Cloud
+
+
 📥 Installation & Running Locally
 This project consists of two folders:
-1️⃣ backend/ → FastAPI Server (Handles scraping, AI requests, and Weaviate storage)
-2️⃣ frontend/ → Next.js UI (Chatbot UI & Scraping Interface)
+📂 backend/ → Handles scraping, AI interactions, and vector storage
+📂 frontend/ → UI for the chatbot and scraping interface
+
 
 🚀 Backend Setup (FastAPI)
-Create a virtual environment & activate it:
-
-sh
-Copy
-Edit
+1.Create a virtual environment & activate it
 python -m venv venv
-source venv/bin/activate  # On Mac/Linux
-venv\Scripts\activate     # On Windows
-Install dependencies:
+venv/scripts/activate
 
-sh
-Copy
-Edit
+2.Install dependencies
 pip install -r requirements.txt
-Set up environment variables (.env file in backend/):
 
-ini
-Copy
-Edit
+3.Set up environment variables (.env file in backend/)
 GEMINI_API_KEY=your-gemini-api-key
-WEAVIATE_URL=http://localhost:8080  # If using local Weaviate
+WEAVIATE_URL=your-url
 WEAVIATE_API_KEY=your-weaviate-api-key
-Start the FastAPI server:
 
-sh
-Copy
-Edit
+4.Start the FastAPI server
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
-🌐 Frontend Setup (Next.js)
-Navigate to the frontend folder:
 
-sh
-Copy
-Edit
-cd ../frontend
-Install dependencies:
 
-sh
-Copy
-Edit
+🌐Frontend Setup (Next.js)
+1.cd frontend
+
+2.Install dependencies
 npm install
-Run the Next.js development server:
 
-sh
-Copy
-Edit
+3.Run the Next.js development server
 npm run dev
-Open http://localhost:3000 in your browser to interact with the chatbot.
+
 
 ⚠️ Assumptions & Limitations
-🔹 Weaviate Setup: The application assumes Weaviate is running either locally or via a cloud instance. If using Weaviate Cloud, update WEAVIATE_URL.
-🔹 Google Gemini API: You must have a valid API key for Google's Gemini AI model to process queries.
-🔹 Scraping Limitations: Some sites may block Selenium-based scraping due to bot detection.
-🔹 AI Model Restrictions: Gemini API may filter responses based on content safety guidelines.
-🔹 No Database Persistence: Current version does not persist data beyond active Weaviate sessions.
+Weaviate Setup: Ensure Weaviate is running either locally or via Weaviate Cloud. Update WEAVIATE_URL accordingly.
+Google Gemini API: Requires a valid API key for AI responses.
+Scraping Limitations: Some websites may block Selenium-based scraping.
+AI Model Restrictions: Gemini API might filter responses based on safety rules.
+No Database Persistence: Current version does not persist data beyond active Weaviate sessions.
+
+
+📄 License
+This project is open-source and licensed under the MIT License.
+
+
+
+
