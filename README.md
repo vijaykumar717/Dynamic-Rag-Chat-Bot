@@ -1,3 +1,6 @@
+PUBLIC URL OF THE APPLICATION:
+
+
 ABEX Chat Bot - AI-Powered Web Scraper & Chat Interface
 🚀 ABEX Chat Bot is an advanced AI-powered web scraper and chatbot that can extract web content, store it in a vector database (Weaviate), and provide intelligent responses using Google Gemini AI.
 
