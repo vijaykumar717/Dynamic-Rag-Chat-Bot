@@ -26,13 +26,13 @@ Backend: FastAPI
 
 Vector Database: Weaviate (Semantic Search)
 
-Web Scraping: Selenium & BeautifulSoup
+Web Scraping: Requests & BeautifulSoup
 
 AI Model: Google Gemini API
 
 Embeddings: sentence-transformers/all-mpnet-base-v2
 
-Hosting: Aws
+Hosting: AWS EC2
 
 
 
