@@ -1,10 +1,7 @@
-PUBLIC URL OF THE APPLICATION:http://13.127.96.122/
+🌍 ABEX Chat Bot - AI-Powered Web Scraper & Chat Interface
+🔗 Public URL: http://13.127.96.122/
 
-
-ABEX Chat Bot - AI-Powered Web Scraper & Chat Interface
-
-
-🚀 ABEX Chat Bot is an advanced AI-powered web scraper and chatbot that can extract web content, store it in a vector database (Weaviate), and provide intelligent responses using Google Gemini AI.
+🚀 ABEX Chat Bot is an advanced AI-powered web scraper and chatbot that extracts web content, stores it in a vector database (Weaviate), and provides intelligent responses using Google Gemini AI.
 
 ## 📌 Project Structure
  
@@ -26,35 +23,22 @@ ABEX Chat Bot - AI-Powered Web Scraper & Chat Interface
 │   ├── /templates     # HTML templates (if needed)
 ```
 
-It includes:
-
-✅ Web Scraping with Beautifulsoup and requests
-
-✅ AI Chatbot with Multiple Personalities (Formal, Casual, Humorous)
-
+🔥 Key Features
+✅ Web Scraping with BeautifulSoup and Requests
+✅ AI Chatbot with Multiple Personalities (Formal 🎓, Casual 😎, Humorous 🤡)
 ✅ Efficient Vector Search with Weaviate
-
-✅ Optimized Embeddings with Sentence Transformers
-
+✅ Optimized Embeddings using Sentence Transformers
 ✅ FastAPI Backend + Next.js Frontend
 
 
 
-
-📌 Tech Stack Used
-
+📌 Tech Stack
 Frontend: Next.js (React)
-
 Backend: FastAPI
-
 Vector Database: Weaviate (Semantic Search)
-
 Web Scraping: Requests & BeautifulSoup
-
 AI Model: Google Gemini API
-
 Embeddings: sentence-transformers/all-mpnet-base-v2
-
 Hosting: AWS EC2
 
 
