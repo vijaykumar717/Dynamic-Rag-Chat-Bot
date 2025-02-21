@@ -26,6 +26,7 @@
 
 🔥 Key Features
 
+
 ✅ Web Scraping with BeautifulSoup and Requests
 
 ✅ AI Chatbot with Multiple Personalities (Formal 🎓, Casual 😎, Humorous 🤡)
@@ -40,16 +41,26 @@
 
 📌 Tech Stack
 
+
 Frontend -	Next.js (React)
+
 Backend -	FastAPI
+
 Vector Database -	Weaviate (Semantic Search)
+
 Web Scraping -	Requests & BeautifulSoup
+
 AI Model -	Google Gemini API
+
 Embeddings -	sentence-transformers/all-mpnet-base-v2
+
 Hosting -	AWS EC2
 
 
+
+
 📥 Installation & Running Locally
+
 This project consists of two main folders:
 
 📂 backend/ → Handles scraping, AI interactions, and vector storage 
@@ -57,28 +68,35 @@ This project consists of two main folders:
 📂 frontend/ → UI for the chatbot and scraping interface
 
 
+
 🚀 Backend Setup (FastAPI)
+
 
 1️⃣ Create a virtual environment & activate it
 
 python -m venv venv
+
 source venv/bin/activate  # On macOS/Linux
 venv\Scripts\activate      # On Windows
 
 
 2️⃣ Install dependencies
+
 pip install -r requirements.txt
 
 
 3️⃣ Set up environment variables (.env file in backend/)
 
+
 Create a .env file and add the following:
+
 GEMINI_API_KEY=your-gemini-api-key
 WEAVIATE_URL=your-weaviate-url
 WEAVIATE_API_KEY=your-weaviate-api-key
 
 
 4️⃣ Start the FastAPI server
+
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 
 
@@ -91,9 +109,14 @@ uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 
 cd frontend
 
+
+
+
 2️⃣ Install dependencies
 
 npm install
+
+
 
 3️⃣ Run the Next.js development server
 
