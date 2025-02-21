@@ -30,8 +30,6 @@
 ✅ Optimized Embeddings using Sentence Transformers
 ✅ FastAPI Backend + Next.js Frontend
 
-
-
 📌 Tech Stack
 Frontend: Next.js (React)
 Backend: FastAPI
@@ -40,64 +38,61 @@ Web Scraping: Requests & BeautifulSoup
 AI Model: Google Gemini API
 Embeddings: sentence-transformers/all-mpnet-base-v2
 Hosting: AWS EC2
-
-
-
 📥 Installation & Running Locally
-
-This project consists of two folders:
+This project consists of two main folders:
 
 📂 backend/ → Handles scraping, AI interactions, and vector storage
-
 📂 frontend/ → UI for the chatbot and scraping interface
 
-
-
 🚀 Backend Setup (FastAPI)
+1️⃣ Create a virtual environment & activate it
 
-1.Create a virtual environment & activate it
-
+sh
+Copy
+Edit
 python -m venv venv
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate      # On Windows
+2️⃣ Install dependencies
 
-venv/scripts/activate
-
-
-
-2.Install dependencies
-
+sh
+Copy
+Edit
 pip install -r requirements.txt
+3️⃣ Set up environment variables (.env file in backend/)
 
-
-
-3.Set up environment variables (.env file in backend/)
-
+ini
+Copy
+Edit
 GEMINI_API_KEY=your-gemini-api-key
-
-WEAVIATE_URL=your-url
-
+WEAVIATE_URL=your-weaviate-url
 WEAVIATE_API_KEY=your-weaviate-api-key
+4️⃣ Start the FastAPI server
 
-
-
-4.Start the FastAPI server
-
+sh
+Copy
+Edit
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+🌐 Frontend Setup (Next.js)
+1️⃣ Navigate to the frontend directory
 
+sh
+Copy
+Edit
+cd frontend
+2️⃣ Install dependencies
 
-
-🌐Frontend Setup (Next.js)
-
-1.cd frontend
-
-
-2.Install dependencies
-
+sh
+Copy
+Edit
 npm install
+3️⃣ Run the Next.js development server
 
-
-3.Run the Next.js development server
-
+sh
+Copy
+Edit
 npm run dev
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
