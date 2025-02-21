@@ -9,10 +9,15 @@ ABEX Chat Bot - AI-Powered Web Scraper & Chat Interface
 
 
 It includes:
+
 ✅ Web Scraping with Beautifulsoup and requests
+
 ✅ AI Chatbot with Multiple Personalities (Formal, Casual, Humorous)
+
 ✅ Efficient Vector Search with Weaviate
+
 ✅ Optimized Embeddings with Sentence Transformers
+
 ✅ FastAPI Backend + Next.js Frontend
 
 
@@ -47,29 +52,49 @@ This project consists of two folders:
 
 
 🚀 Backend Setup (FastAPI)
+
 1.Create a virtual environment & activate it
+
 python -m venv venv
+
 venv/scripts/activate
 
+
+
 2.Install dependencies
+
 pip install -r requirements.txt
 
+
+
 3.Set up environment variables (.env file in backend/)
+
 GEMINI_API_KEY=your-gemini-api-key
+
 WEAVIATE_URL=your-url
+
 WEAVIATE_API_KEY=your-weaviate-api-key
 
+
+
 4.Start the FastAPI server
+
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 
 
+
 🌐Frontend Setup (Next.js)
+
 1.cd frontend
 
+
 2.Install dependencies
+
 npm install
 
+
 3.Run the Next.js development server
+
 npm run dev
 
 
@@ -77,12 +102,29 @@ npm run dev
 Deployment Setup (AWS EC2)
 
 
+
+
+
+
+
+
+
+
+
+
+
 ⚠️ Assumptions & Limitations
+
 Weaviate Setup: Ensure Weaviate is running either locally or via Weaviate Cloud. Update WEAVIATE_URL accordingly.
+
 Google Gemini API: Requires a valid API key for AI responses.
+
 Scraping Limitations: Some websites may not contain texts inside html
+
 AI Model Restrictions: Gemini API might filter responses based on safety rules.
+
 No Database Persistence: Current version does not persist data beyond active Weaviate sessions.
+
 
 
 📄 License
