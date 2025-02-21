@@ -40,7 +40,7 @@
 ✅ FastAPI Backend + Next.js Frontend
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------
 
 
 📌 Tech Stack
@@ -61,7 +61,7 @@ Embeddings -	sentence-transformers/all-mpnet-base-v2
 Hosting -	AWS EC2
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -75,7 +75,7 @@ This project consists of two main folders:
 
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 🚀 Backend Setup (FastAPI)
@@ -89,9 +89,11 @@ source venv/bin/activate  # On macOS/Linux
 venv\Scripts\activate      # On Windows
 
 
+
 2️⃣ Install dependencies
 
 pip install -r requirements.txt
+
 
 
 3️⃣ Set up environment variables (.env file in backend/)
@@ -104,13 +106,14 @@ WEAVIATE_URL=your-weaviate-url
 WEAVIATE_API_KEY=your-weaviate-api-key
 
 
+
 4️⃣ Start the FastAPI server
 
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
