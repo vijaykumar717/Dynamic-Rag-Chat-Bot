@@ -2,7 +2,11 @@ PUBLIC URL OF THE APPLICATION:
 
 
 ABEX Chat Bot - AI-Powered Web Scraper & Chat Interface
+
+
 🚀 ABEX Chat Bot is an advanced AI-powered web scraper and chatbot that can extract web content, store it in a vector database (Weaviate), and provide intelligent responses using Google Gemini AI.
+
+
 
 It includes:
 ✅ Web Scraping with Selenium
@@ -12,20 +16,34 @@ It includes:
 ✅ FastAPI Backend + Next.js Frontend
 
 
+
+
 📌 Tech Stack Used
+
 Frontend: Next.js (React)
+
 Backend: FastAPI
+
 Vector Database: Weaviate (Semantic Search)
+
 Web Scraping: Selenium & BeautifulSoup
+
 AI Model: Google Gemini API
+
 Embeddings: sentence-transformers/all-mpnet-base-v2
-Hosting: Local AND Cloud
+
+Hosting: Aws
+
 
 
 📥 Installation & Running Locally
+
 This project consists of two folders:
+
 📂 backend/ → Handles scraping, AI interactions, and vector storage
+
 📂 frontend/ → UI for the chatbot and scraping interface
+
 
 
 🚀 Backend Setup (FastAPI)
