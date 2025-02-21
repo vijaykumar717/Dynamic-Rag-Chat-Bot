@@ -24,6 +24,8 @@
 ```
 
 
+
+
 🔥 Key Features
 
 
@@ -36,6 +38,8 @@
 ✅ Optimized Embeddings using Sentence Transformers
 
 ✅ FastAPI Backend + Next.js Frontend
+
+
 
 
 
@@ -59,6 +63,8 @@ Hosting -	AWS EC2
 
 
 
+
+
 📥 Installation & Running Locally
 
 This project consists of two main folders:
@@ -66,6 +72,9 @@ This project consists of two main folders:
 📂 backend/ → Handles scraping, AI interactions, and vector storage 
 
 📂 frontend/ → UI for the chatbot and scraping interface
+
+
+
 
 
 
@@ -98,6 +107,9 @@ WEAVIATE_API_KEY=your-weaviate-api-key
 4️⃣ Start the FastAPI server
 
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+
+
+
 
 
 
