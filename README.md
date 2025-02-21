@@ -1,4 +1,4 @@
-PUBLIC URL OF THE APPLICATION:
+PUBLIC URL OF THE APPLICATION:http://13.127.96.122/
 
 
 ABEX Chat Bot - AI-Powered Web Scraper & Chat Interface
@@ -9,7 +9,7 @@ ABEX Chat Bot - AI-Powered Web Scraper & Chat Interface
 
 
 It includes:
-✅ Web Scraping with Selenium
+✅ Web Scraping with Beautifulsoup and requests
 ✅ AI Chatbot with Multiple Personalities (Formal, Casual, Humorous)
 ✅ Efficient Vector Search with Weaviate
 ✅ Optimized Embeddings with Sentence Transformers
@@ -73,10 +73,14 @@ npm install
 npm run dev
 
 
+
+Deployment Setup (AWS EC2)
+
+
 ⚠️ Assumptions & Limitations
 Weaviate Setup: Ensure Weaviate is running either locally or via Weaviate Cloud. Update WEAVIATE_URL accordingly.
 Google Gemini API: Requires a valid API key for AI responses.
-Scraping Limitations: Some websites may block Selenium-based scraping.
+Scraping Limitations: Some websites may not contain texts inside html
 AI Model Restrictions: Gemini API might filter responses based on safety rules.
 No Database Persistence: Current version does not persist data beyond active Weaviate sessions.
 
